@@ -1,10 +1,16 @@
 # Proximity with Python in QGIS
 
-I am trying to produce a map to show the proximity of administrative areas to parks. I'd like to show this in terms of how many other administrative areas are between a given area and the nearest park (i.e., 1, 2, 3, 4... areas) and show this in a colour scale, similar to the example image shown below (this shows these parks overlain on a colour map of a different metric).
+Link resource: [geodashboard-tips-and-tricks > qgis-python-proximity-250129](https://github.com/piergiorgio-roveda/geodashboard-tips-and-tricks/blob/main/qgis-python-proximity-250129.md) *(https://github.com/piergiorgio-roveda/geodashboard-tips-and-tricks/blob/main/qgis-python-proximity-250129.md)*
 
-I have a shapefile of these administrative areas and parks.
+**Tags:**
 
-**Do you have any ideas of how this could be done?**
+> #GIS #Geospatial #SpatialAnalysis #DataVisualization #QGIS #GIScience #UrbanPlanning #LandUse #EnvironmentalAnalysis #SpatialPlanning #DataScience #DataAnalytics #DataViz #Python
+
+## Question
+
+> I am trying to produce a map to show the proximity of administrative areas to parks. I'd like to show this in terms of how many other administrative areas are between a given area and the nearest park (i.e., 1, 2, 3, 4... areas) and show this in a colour scale, similar to the example image shown below (this shows these parks overlain on a colour map of a different metric). I have a shapefile of these administrative areas and parks. **Do you have any ideas of how this could be done?**
+
+## Answer
 
 To achieve this analysis in QGIS using Python, you need to determine the number of administrative areas between each given area and the nearest park. The process involves:
 
@@ -13,7 +19,7 @@ To achieve this analysis in QGIS using Python, you need to determine the number 
 - Counting the number of administrative areas intersected along the shortest path.
 - Classifying and visualizing the results with a color gradient.
 
-## Here's how you can do it using Python in the QGIS Python Console
+### Here's how you can do it using Python in the QGIS Python Console
 
 ```python
 import processing
@@ -116,7 +122,7 @@ def apply_graduated_style(layer, field_name):
 apply_graduated_style(new_layer, "proximity_score")
 ```
 
-## How It Works
+### How It Works
 
 1. Loads the administrative areas and parks layers.
 1. Finds the nearest park for each administrative area.
@@ -126,7 +132,7 @@ apply_graduated_style(new_layer, "proximity_score")
 1. Saves the modified shapefile and loads it into QGIS.
 1. Applies a graduated color scale based on proximity scores (optional).
 
-## Expected Outcome
+### Expected Outcome
 
 - A new shapefile (admin_proximity.shp) will be created and added to QGIS.
 - Each administrative area will have a proximity_score field indicating the number of other areas between it and the nearest park.

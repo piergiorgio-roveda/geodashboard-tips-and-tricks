@@ -1,6 +1,8 @@
 # Find Duplicates in Points, Lines, or Polygons with Python
 
-Link resource: [geodashboard-tips-and-tricks > python-find-duplicates-250130](https://github.com/piergiorgio-roveda/geodashboard-tips-and-tricks/blob/main/python-find-duplicates-250130.md) *(https://github.com/piergiorgio-roveda/geodashboard-tips-and-tricks/blob/main/python-find-duplicates-250130.md)*
+Link resource: [geodashboard-tips-and-tricks > python-find-duplicates-250130](https://github.com/piergiorgio-roveda/geodashboard-tips-and-tricks/blob/main/python-find-duplicates-250130.md)
+
+FULL CODE: <https://github.com/piergiorgio-roveda/geodashboard-tips-and-tricks/blob/main/python-find-duplicates-250130.md>
 
 **Tags:**
 
@@ -21,7 +23,7 @@ Optimized Python Script to Find Duplicates in Points, Lines, or Polygons using G
 
 Dependencies: geopandas, pandas, shapely
 
-## Here's how you can do it using Python 
+## Here's how you can do it using Python
 
 ```python
 import geopandas as gpd
